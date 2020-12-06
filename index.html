@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="clock">
+			<div class="armSec" id="sec"></div>
+			<div class="armMin" id="min"></div>	
+			<div class="armHour" id="hour"></div>
+			<div class="center"></div>	
+	</div>
+	<script src="js/jquery.js"></script>
+	<script>
+		$(document).ready(function(){
+			function saat(){
+				var d = new Date();
+				h = d.getHours();
+				m = d.getMinutes();
+				s = d.getSeconds();
+				if(h>11){
+					h-=12;
+				}
+				alfa = (h*3600+m*60+s)/120;
+				betta = (m*60+s)/10;
+				gamma = s*6;
+				$("#hour").css("transform", "rotate("+alfa+"deg)");
+				$("#min").css("transform", "rotate("+betta+"deg)");
+				$("#sec").css("transform", "rotate("+gamma+"deg)");
+			}
+		
+			
+			saat();
+			setInterval(saat,1000);
+
+
+
+
+
+		});
+
+	</script>
+</body>
+</html>

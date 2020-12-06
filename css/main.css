@@ -1,0 +1,60 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.clock{
+	width: 600px;
+	height: 600px;
+	position: absolute;
+	z-index: 1;
+	top: 25px;
+	left: 375px;
+	border-radius: 50%;
+	background-image: url('../images/clock.png');
+	background-size: cover;
+}
+.center{
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: black;
+	position: absolute;
+	top: 292px;
+	left: 292px;
+	z-index: 5;
+
+}
+.armSec{
+	width: 6px;
+	height: 220px;
+	background-color: black;
+	position: absolute;
+	z-index: 4;
+ 	top: 80px;
+ 	left: 297px;
+ 	transform-origin: bottom;
+}
+
+
+.armMin{
+	width: 8px;
+	height: 200px;
+	background-color: black;
+	position: absolute;
+	z-index: 3;
+ 	top: 100px;
+ 	left: 296px;
+ 	transform-origin: bottom;
+}
+
+.armHour{
+	width: 10px;
+	height: 170px;
+	background-color: black;
+	position: absolute;
+	z-index: 2;
+ 	top: 130px;
+ 	left: 295px;
+ 	transform-origin: bottom;
+}
+
